@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Hello Extensions",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_icon": "cent.png"
+  },
+
+  "content_scripts": [
+    {
+      "js": ["./index.js"],
+      "matches": ["https://www.google.com/*"]
+    }
+  ]
+}
